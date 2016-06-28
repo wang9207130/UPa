@@ -421,6 +421,9 @@ public class EnterLiveHelper extends Presenter {
             int result = avContext.exitRoom();
             Log.i("--RegisterActivity--","--1--退出房间成功");
         } else {
+
+
+
             Log.i("--RegisterActivity--","--2--退出房间成功");
             quiteIMChatRoom();
             CurLiveInfo.setCurrentRequestCount(0);
