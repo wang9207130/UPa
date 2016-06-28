@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_mylive_bg"
+    >
+
+    <EditText
+        android:id="@+id/edt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/edt_title_hint"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"
+        android:layout_marginTop="@dimen/small_area_margin_bottom"
+        android:textCursorDrawable="@color/white"
+        android:background="@null"
+        android:textSize="22sp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_topic_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_title"
+        android:layout_marginTop="@dimen/margin_top_middle"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:id="@+id/tv_add_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_topic"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            />
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/margin_left_middle"
+            android:background="@color/white"
+            android:layout_toRightOf="@+id/tv_add_topic"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin_top_middle"
+            ></View>
+        <ImageView
+            android:id="@+id/img_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/img_local"
+            android:layout_toRightOf="@+id/view"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_top_middle"
+            />
+
+        <TextView
+            android:id="@+id/tv_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/local"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/img_local"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:textSize="20sp"
+            />
+    </RelativeLayout>
+
+    <!--分享区-->
+    <LinearLayout
+        android:id="@+id/ll_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/rl_topic_loc"
+        android:layout_marginTop="@dimen/margin_right"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageView
+        android:id="@+id/img_qq_zome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/img_live_qqzome"
+        android:layout_marginLeft="@dimen/margin_left10"
+        />
+        <ImageView
+            android:id="@+id/img_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/img_live_wechat"
+            android:layout_marginLeft="@dimen/margin_left10"
+            />
+
+        <ImageView
+            android:id="@+id/img_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/img_live_friend"
+            android:layout_marginLeft="@dimen/margin_left10"
+            />
+        <ImageView
+            android:id="@+id/img_sina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/img_live_sina"
+            android:layout_marginLeft="@dimen/margin_left10"
+            />
+        <ImageView
+            android:id="@+id/img_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/img_live_qqzome"
+            android:layout_marginLeft="@dimen/margin_left10"
+            />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/start_live"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_third"
+        android:layout_marginTop="@dimen/margin_top_middle"
+        android:background="@drawable/btn_shape"
+        android:text="@string/start_live"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/margin_top"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="@color/yellow"
+        />
+
+
+
+
+
+
+</RelativeLayout>

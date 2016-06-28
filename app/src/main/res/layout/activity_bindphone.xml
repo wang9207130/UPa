@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="0.2"
+            android:padding="@dimen/margin_left10" >
+
+            <Button
+                android:id="@+id/iv_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/img_back" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="0.6"
+            android:padding="@dimen/margin_left10" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/bindphone"
+                android:textColor="@color/yellow"
+                android:textSize="22sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2" >
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_top_middle"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/margin_left10"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext_bg"
+            android:hint="@string/login_name_hint"
+            android:layout_weight="0.7"
+            android:textColor="@color/white"
+            android:padding="@dimen/padding"
+            android:textColorHint="@color/white"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:text="@string/sure"
+            android:textColor="@color/yellow"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="@drawable/btn_sure_shape"
+            android:layout_marginRight="@dimen/margin"
+            />
+
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin_left10"
+        android:hint="@string/login_psw_hint"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@drawable/edittext_bg"
+        android:padding="@dimen/padding"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin_left10"
+        android:layout_marginTop="@dimen/video_smallview_move_thresholdY"
+        android:background="@drawable/btn_shape"
+        android:text="@string/bind"
+        android:textColor="@color/yellow"
+        android:textSize="18sp"
+        android:gravity="center"
+        />
+
+
+
+
+
+
+</LinearLayout>

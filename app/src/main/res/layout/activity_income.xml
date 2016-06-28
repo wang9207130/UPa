@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="0.2"
+            android:padding="@dimen/margin_left10">
+
+            <Button
+                android:id="@+id/iv_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/img_back" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_weight="0.5"
+            android:padding="@dimen/margin_left10">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/myincomes"
+                android:textColor="@color/yellow"
+                android:textSize="22sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_record"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/record"
+                android:textColor="@color/yellow"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding"
+        android:padding="@dimen/margin_top_middle"
+        android:background="@color/seting_bg"
+        >
+        <ImageView
+            android:id="@+id/img_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/img_income_get"
+            android:layout_marginLeft="@dimen/margin_left_middle"
+            />
+        <TextView
+            android:id="@+id/income_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_s"
+            android:text="30"
+            android:textSize="55sp"
+            android:layout_marginLeft="@dimen/margin_top_middle"
+            android:textColor="@color/pinck"
+            />
+        <TextView
+            android:id="@+id/tvs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/getincome"
+            android:layout_below="@+id/income_number"
+            android:layout_toRightOf="@+id/img_s"
+            android:layout_marginLeft="@dimen/margin_top_middle"
+            android:textColor="@color/yellow"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvs"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="(3.00元)"
+            android:layout_toRightOf="@+id/img_s"
+            android:layout_marginLeft="@dimen/margin_top_middle"
+            android:layout_marginTop="@dimen/margin"
+            />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_left10"
+        android:background="@color/seting_bg"
+        android:padding="@dimen/padding"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notice"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"
+        android:layout_marginTop="@dimen/margin_top_middle"
+        android:text="@string/get"
+        android:textSize="20sp"
+        android:textColor="@color/yellow"
+        android:gravity="center"
+        />
+
+</LinearLayout>

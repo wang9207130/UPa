@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_weight="0.2"
+                android:padding="@dimen/margin_left10">
+
+                <Button
+                    android:id="@+id/iv_back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/img_back" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_weight="0.6"
+                android:padding="@dimen/margin_left10">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/mylevel"
+                    android:textColor="@color/yellow"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_save"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2">
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_middle"
+            android:layout_marginRight="@dimen/margin_left_middle"
+            android:layout_marginTop="@dimen/margin"
+            android:background="@color/seting_bg">
+
+
+            <Button
+                android:id="@+id/tv_my_level"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/img_mylevel_bg"
+                android:gravity="center|top"
+                android:text="LV.3"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+
+                />
+
+            <ImageView
+                android:id="@+id/img_huizhang"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/tv_my_level"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/img_badge" />
+
+            <TextView
+                android:id="@+id/prog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_huizhang"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_left"
+                android:text="63/899"
+                android:textColor="@color/yellow"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/prog"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_left10"
+                android:gravity="center"
+                android:text="@string/mynotice"
+                android:textColor="@color/yellow"
+                android:textSize="14sp"
+
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_middle"
+            android:layout_marginTop="@dimen/padding"
+            android:text="我的特权"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+<!--z专属图标-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:background="@color/seting_bg"
+            android:padding="@dimen/margin_left10">
+
+            <ImageView
+                android:id="@+id/img_suns"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/img_suns" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left10"
+                android:layout_toRightOf="@+id/img_suns"
+                android:text="专属图标"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv1_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv1"
+                android:layout_marginLeft="@dimen/margin_left10"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_toRightOf="@+id/img_suns"
+                android:text="@string/level_content"
+                android:textColor="@color/yellow"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+<!--排名靠前-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:background="@color/seting_bg"
+            android:padding="@dimen/margin_left10">
+
+            <ImageView
+                android:id="@+id/img_rank"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/img_rank" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left10"
+                android:layout_toRightOf="@+id/img_rank"
+                android:text="排名靠前"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv2_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv2"
+                android:layout_marginLeft="@dimen/margin_left10"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_toRightOf="@+id/img_rank"
+                android:text="@string/rank_content"
+                android:textColor="@color/yellow"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+        <!--独家认证-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:background="@color/seting_bg"
+            android:padding="@dimen/margin_left10">
+
+            <ImageView
+                android:id="@+id/img_certificate"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/img_level_certain" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left10"
+                android:layout_toRightOf="@+id/img_certificate"
+                android:text="独家认证"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv3_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv3"
+                android:layout_marginLeft="@dimen/margin_left10"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_toRightOf="@+id/img_certificate"
+                android:text="@string/only_certain"
+                android:textColor="@color/yellow"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+        <!--进房特权-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:background="@color/seting_bg"
+            android:padding="@dimen/margin_left10">
+
+            <ImageView
+                android:id="@+id/enterroom"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/img_enterroom" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left10"
+                android:layout_toRightOf="@+id/enterroom"
+                android:text="进房特效"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv4_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv4"
+                android:layout_marginLeft="@dimen/margin_left10"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_toRightOf="@+id/enterroom"
+                android:text="@string/enterroom"
+                android:textColor="@color/yellow"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

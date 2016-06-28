@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@android:color/black">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_weight="0.2"
+                android:padding="@dimen/margin_left10">
+
+                <Button
+                    android:id="@+id/iv_back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/img_back" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_weight="0.6"
+                android:padding="@dimen/margin_left10">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/mymoney"
+                    android:textColor="@color/yellow"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_save"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2">
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_conunt_safe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_left10"
+            android:background="@color/seting_bg"
+            android:padding="@dimen/margin_left10">
+
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/account"
+                android:textColor="@color/yellow"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/img_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_account"
+                android:layout_marginLeft="@dimen/margin_left10"
+                android:src="@mipmap/img_money" />
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_money"
+                android:text="0"
+                android:textColor="@color/yellow"
+                android:textSize="18sp"
+                android:layout_marginLeft="@dimen/margin_left10"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_pay_way"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left10"
+            android:layout_marginRight="@dimen/margin_left10"
+            android:layout_marginTop="@dimen/margin_left10"
+            >
+            <TextView
+                android:id="@+id/methord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_method"
+                android:textSize="18sp"
+                android:textColor="@color/yellow"
+                />
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/methord"
+                android:layout_marginTop="@dimen/margin"
+
+                >
+                <RadioButton
+                    android:id="@+id/btn_alipay"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_pay_selctor"
+                    android:checked="true"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textColor="@color/yellow"
+                    android:textSize="18sp"
+                    android:text="@string/alipay_method"
+                    android:layout_marginRight="@dimen/margin_left_middle"
+                    />
+                <RadioButton
+                    android:id="@+id/btn_wechat_alipay"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:text="@string/wechatpay_method"
+                    android:background="@drawable/btn_pay_selctor"
+                    android:gravity="center"
+                    android:textColor="@color/yellow"
+                    android:textSize="18sp"
+                    android:button="@null"
+                    />
+
+
+            </RadioGroup>
+            <TextView
+                android:id="@+id/mothord_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg"
+                android:textSize="18sp"
+                android:text="@string/money"
+                android:textColor="@color/yellow"
+                android:layout_marginTop="@dimen/margin"
+                />
+
+        </RelativeLayout>
+<!--1-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_left10"
+            android:background="@color/seting_bg"
+            android:padding="@dimen/margin"
+            >
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img_money"
+                android:layout_marginLeft="@dimen/padding"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/yellow"
+                android:text="20"
+                android:layout_toRightOf="@+id/img1"
+                android:layout_marginLeft="@dimen/padding"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="新人礼包，仅有一次机会"
+                android:layout_below="@+id/img1"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_marginTop="@dimen/margin"
+
+                />
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_shape"
+                android:text="¥1.00"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/yellow"
+                android:layout_marginRight="@dimen/padding"
+                />
+
+        </RelativeLayout>
+        <!--6-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/seting_bg"
+            android:padding="@dimen/margin_left10"
+            >
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img_money"
+                android:layout_marginLeft="@dimen/margin_left10"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/yellow"
+                android:text="60"
+                android:layout_toRightOf="@+id/img2"
+                android:layout_marginLeft="@dimen/padding"
+                />
+           <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="新人礼包，仅有一次机会"
+                android:layout_below="@+id/img1"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_marginTop="@dimen/margin"
+
+                />-->
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_shape"
+                android:text="¥6.00"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/yellow"
+                android:layout_marginRight="@dimen/margin_left10"
+                />
+
+        </RelativeLayout>
+        <!--30-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/seting_bg"
+            android:padding="@dimen/margin_left10"
+            >
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img_money"
+                android:layout_marginLeft="@dimen/margin_left10"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/yellow"
+                android:text="300"
+                android:layout_toRightOf="@+id/img3"
+                android:layout_marginLeft="@dimen/padding"
+                />
+            <!-- <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="16sp"
+                 android:textColor="@color/white"
+                 android:text="新人礼包，仅有一次机会"
+                 android:layout_below="@+id/img1"
+                 android:layout_marginLeft="@dimen/padding"
+                 android:layout_marginTop="@dimen/margin"
+
+                 />-->
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_shape"
+                android:text="¥30.00"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/yellow"
+                android:layout_marginRight="@dimen/margin_left10"
+                />
+
+        </RelativeLayout>
+        <!--98-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/seting_bg"
+            android:padding="@dimen/margin"
+            >
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img_money"
+
+                android:layout_marginLeft="@dimen/padding"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/yellow"
+                android:text="980"
+                android:layout_toRightOf="@+id/img4"
+                android:layout_marginLeft="@dimen/padding"
+                />
+            <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="16sp"
+                 android:textColor="@color/white"
+                 android:text="赠送10U票"
+                 android:layout_below="@+id/img4"
+                 android:layout_marginLeft="@dimen/padding"
+                 android:layout_marginTop="@dimen/margin"
+
+                 />
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_shape"
+                android:text="¥98.00"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/yellow"
+                android:layout_marginRight="@dimen/padding"
+                />
+
+        </RelativeLayout>
+        <!--2980-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/seting_bg"
+            android:padding="@dimen/margin"
+            >
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img_money"
+
+                android:layout_marginLeft="@dimen/padding"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/yellow"
+                android:text="2980"
+                android:layout_toRightOf="@+id/img5"
+                android:layout_marginLeft="@dimen/padding"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="赠送90U票"
+                android:layout_below="@+id/img5"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_marginTop="@dimen/margin"
+
+                />
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_shape"
+                android:text="¥298.00"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/yellow"
+                android:layout_marginRight="@dimen/padding"
+                />
+
+        </RelativeLayout>
+        <!--5980-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/seting_bg"
+            android:padding="@dimen/margin"
+            >
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img_money"
+
+                android:layout_marginLeft="@dimen/padding"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/yellow"
+                android:text="5880"
+                android:layout_toRightOf="@+id/img6"
+                android:layout_marginLeft="@dimen/padding"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="赠送180U票"
+                android:layout_below="@+id/img6"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_marginTop="@dimen/margin"
+
+                />
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_shape"
+                android:text="¥588.00"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/yellow"
+                android:layout_marginRight="@dimen/padding"
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

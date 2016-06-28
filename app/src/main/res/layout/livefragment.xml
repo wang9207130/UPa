@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/seting_bg">
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="@dimen/margin_top_middle"
+            android:layout_height="@dimen/margin_top_middle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left10"
+            android:layout_marginRight="@dimen/margin_left10"
+            android:src="@mipmap/img_search" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/img_message"
+            android:layout_toRightOf="@+id/img_search"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_focus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableBottom="@drawable/rb_selector"
+                android:gravity="center"
+                android:text="关注"
+                android:textColor="@drawable/text_selector"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rb_hot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableBottom="@drawable/rb_selector"
+                android:gravity="center"
+                android:text="热门"
+                android:checked="true"
+                android:textColor="@drawable/text_selector"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rb_new"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableBottom="@drawable/rb_selector"
+                android:gravity="center"
+                android:text="最新"
+                android:textColor="@drawable/text_selector"
+                android:textSize="18sp" />
+
+
+        </RadioGroup>
+
+
+        <ImageView
+            android:id="@+id/img_message"
+            android:layout_width="@dimen/margin_top_middle"
+            android:layout_height="@dimen/margin_top_middle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left10"
+            android:layout_marginRight="@dimen/margin_left10"
+            android:src="@mipmap/img_message" />
+
+
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

@@ -1,0 +1,186 @@
+<resources>
+    <string name="app_name">UPa</string>
+    <string name="login_name_hint">请输入手机号</string>
+    <string name="login_psw_hint">请输入验证码</string>
+    <string name="btn_code">获取验证码</string>
+    <string name="btn_login">登录</string>
+    <string name="btn_regester">注册</string>
+    <string name="text_other_login">其他登录方式</string>
+    <string name="day">昨天</string>
+    <string name="send_out">送出</string>
+    <string name="signature">个性签名</string>
+    <string name="fans">粉丝</string>
+    <string name="attention">关注</string>
+    <string name="contribution">U票贡献榜</string>
+    <string name="level">等级</string>
+    <string name="income">收益</string>
+    <string name="money">充值</string>
+    <string name="setting">设置</string>
+    <string name="certification">认证</string>
+    <string name="sure">验证</string>
+    <string name="applyforcertain">申请Upa认证</string>
+    <string name="edt_title_hint">给直播写个标题吧</string>
+    <string name="add_topic">添加话题</string>
+    <string name="local">定位开</string>
+    <string name="start_live">开始直播</string>
+    <string name="safe">账号与安全</string>
+    <string name="black_list">黑名单</string>
+    <string name="clear">清除缓存</string>
+    <string name="feedback">用户反馈</string>
+    <string name="aboutus">关于我们</string>
+    <string name="problem">常见问题</string>
+    <string name="exit_out">退出登录</string>
+    <string name="editor">编辑</string>
+    <string name="avator">头像</string>
+    <string name="nick_name">昵称</string>
+    <string name="sex">性别</string>
+    <string name="upaId">Upa ID</string>
+    <string name="age">年龄</string>
+    <string name="emotion">情感状态</string>
+    <string name="home">家乡</string>
+    <string name="profession">职业</string>
+    <string name="mymoney">我的U票</string>
+    <string name="account">账户余额</string>
+    <string name="pay_method">选择支付方式</string>
+    <string name="alipay_method">支付宝支付</string>
+    <string name="wechatpay_method">微信支付</string>
+    <string name="myincomes">我的收益</string>
+    <string name="getincome">收获U票</string>
+    <string name="notice">提示：10U票=1元</string>
+    <string name="get">提现</string>
+    <string name="mylevel">我的等级</string>
+    <string name="mynotice">观看直播就可以获得经验值哦\n想自己直播?没问题,直播经验更加多\n不想等待,礼物刷起来，刷的越多,神级越快</string>
+    <string name="level_content">1.不同等级图标不同，等级越高越尊贵</string>
+    <string name="rank_content">2.你的身份一眼可见，尊贵显而易见</string>
+    <string name="only_certain">17级开启认证特权，彰显身份，与众不同</string>
+    <string name="enterroom">57级开启进房特效，狂拽酷炫</string>
+    <string name="bindphone">绑定手机</string>
+    <string name="bind">绑定</string>
+    <string name="card">卡号</string>
+    <string name="cardnumber">请输入银行卡号</string>
+    <string name="bank">请输入银行名</string>
+    <string name="name">持卡人</string>
+    <string name="time">到账时间</string>
+    <string name="hour">24小时内到账</string>
+    <string name="count">转出金额</string>
+    <string name="notices">每笔限额50000.00,本日还可转出</string>
+    <string name="times">3次。</string>
+    <string name="record">领取记录</string>
+
+
+
+
+    <!-- login re fragment-->
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="tencent_tls_ui_independentLoginTitle">用户名登录</string>
+    <string name="tencent_tls_ui_independentRegisterTitle">用户名注册</string>
+
+    <string name="action_settings">settings</string>
+
+
+    <string name="btn_take_photo">拍照</string>
+    <string name="btn_pic_photo">从手机相册选择</string>
+    <string name="btn_return_home">返回首页</string>
+    <string name="btn_return">返回</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_refuse">拒绝</string>
+    <string name="btn_agree">同意</string>
+    <string name="btn_sure">确定</string>
+    <string name="btn_close">关闭</string>
+
+
+    <string name="error_code_prefix">错误码：</string>
+
+
+    <!-- live fragment-->
+    <string name="live_unknown">未知</string>
+    <string name="live_titile">最新直播</string>
+    <string name="dialog_members_tips">邀请互动连线（最多可与三个成员进行互动直播）</string>
+
+
+    <!-- live play -->
+    <string name="send">发送</string>
+    <string name="invite_dialog_tips">主播邀请您与他进行互动直播</string>
+    <string name="live_end_ask_tips">确定结束直播?</string>
+    <string name="live_end_tips">直播结束啦</string>
+    <string name="live_time_tips">直播时长</string>
+    <string name="live_members_tips">观看人数</string>
+    <string name="live_admires_tips">获赞数量</string>
+
+    <string name="live_report_tips">请选择您的举报原因</string>
+    <string name="live_report_dirty">垃圾营销</string>
+    <string name="live_report_false">不实信息</string>
+    <string name="live_report_virus">有害信息</string>
+    <string name="live_report_illegal">违法信息</string>
+    <string name="live_report_yellow">淫秽信息</string>
+
+    <!-- pushstream -->
+    <string name="clip_title">点击地址复制到黏贴版</string>
+    <string name="clip_tip">地址复制到黏贴版上了</string>
+
+    <!-- msgadapter -->
+    <item type="id" name="tag_first"></item>
+    <item type="id" name="tag_second"></item>
+
+
+    <!-- profile fragment-->
+    <string name="profile_title">编辑个人信息</string>
+    <string name="profile_icon">头像</string>
+    <string name="profile_nickname">昵称</string>
+    <string name="profile_sign">签名</string>
+    <string name="profile_set">设置</string>
+    <string name="profile_about">关于随心播</string>
+    <string name="btn_login_out">退出登录</string>
+    <string name="tip_force_offline">您的帐号已在其它地方登陆</string>
+
+    <!-- set -->
+    <string name="set_live_animator">渐隐动画</string>
+    <string name="set_log_level">日志等级</string>
+    <string name="set_sdk_version">SDK版本</string>
+
+    <!-- edit -->
+    <string name="edit_error">修改失败</string>
+
+
+    <!-- fragment1.8 publish -->
+    <string name="publish_already_launch_avRoom">wait!</string>
+    <string name="publish_photo_take">拍照</string>
+    <string name="publish_photo_album">相册</string>
+    <string name="publish_need_photo_tips">从未发起过图片，请选择一张作为直播封面</string>
+    <string name="publish_wait_uploading">请等待封面上传完成</string>
+    <string name="publish_upload_success">上传封面成功</string>
+    <string name="publish_photo_make_sure_tips">请添加一张照片</string>
+    <string name="publish_photo_make_sure_title">请输入图片标题</string>
+    <string name="publish_create_room_failed">创建房间失败</string>
+    <string name="publish_upload_cover_failed">上传封面失败</string>
+    <string name="publish_photo_success">发布图片成功</string>
+    <string name="text_continue">继续</string>
+    <string name="text_publish">开始直播</string>
+    <string name="text_live_preview">发布直播</string>
+    <string name="text_photo_preview">发布照片</string>
+    <string name="text_live_title_input">请输入直播标题</string>
+    <string name="text_photo_title_input">你的照片你做主</string>
+    <string name="text_live_open_lbs">开启位置</string>
+    <string name="text_live_close_lbs">不显示位置</string>
+    <string name="text_live_location">正在定位中</string>
+    <string name="text_live_lbs_fail">定位失败</string>
+    <string name="text_live_lbs_unknown">未知</string>
+    <string name="text_live_default_title">我的直播我做主</string>
+    <string name="text_start_push">开启推流</string>
+    <string name="text_record_info">开始录制后直播视频自动录制，并可以进行回放</string>
+    <string name="text_live_all_see">所有人可看</string>
+    <string name="text_live_share">同步到</string>
+    <string name="text_live">正在直播>></string>
+    <string name="text_live_add_title_tips">给你的直播设置一个满意的封面</string>
+    <string name="text_live_admire_limit">点赞过于频繁</string>
+    <string name="tip_no_permission">权限不足</string>
+
+    <string name="host_sign">我的签名就是把我的世界直播给你们</string>
+    <string name="host_phone">iPhone6S Plus</string>
+    <string name="host_funs">粉丝数:9090</string>
+    <string name="host_follow">关注:7089</string>
+    <string name="host_admire">赞:11.3w</string>
+
+</resources>
